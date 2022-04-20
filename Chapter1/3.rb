@@ -7,15 +7,11 @@
 # Ex for a wrong class name : Movie_script
 # Ex for Everywhere Else def count_words_in
 # Ex for constantes ALL_UPPERCASE, ANTLERS_PER_MALE_MOOSE = 2
-=begin
-  def count_words_in ( the_string )
-    the_words = the_string.split
-    the_words.size
-  end
-=end
-rescue => exception
+#  def count_words_in ( the_string )
+#    the_words = the_string.split
+#    the_words.size
+#  end
 
-end
 class Document
   attr_accessor :title, :author, :content
 
@@ -33,14 +29,12 @@ class Document
     words.size
   end
 
-  def count_words_in ( the_string )
+  def count_words_in(the_string)
     the_words = the_string.split
     the_words.size
   end
-
 end
 
-
-new_doc = Document.new("my title", "Christophe", "my content")
-res = new_doc.count_words_in ( "the strings is a short string" )
+new_doc = Document.new('my title', 'Christophe', 'my content')
+res = new_doc.count_words_in('the strings is a short string')
 p res
