@@ -21,18 +21,17 @@ doc = Document.new('my title', 'Christophe', 'my content')
 
 # ----------- Do this ----------------
 
-doc.words.each { |word| puts word}
+doc.words.each { |word| puts word }
 
 # ------------- And do not ------------
-doc.words.each do |word|
-  puts word
-end
+# doc.words.each do |word|
+#   puts word
+# end
 
 puts doc.author
 puts doc.instance_of? Document
 
 puts doc.instance_of? (self.class)
-
 
 s1 = Set.new [1, 2]
 puts s1.class
