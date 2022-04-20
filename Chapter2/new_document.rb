@@ -15,14 +15,18 @@ class NewDocument
 
   def title=(new_title)
 
-    #--------------------------  --------------------------------
-    if not @read_only
-      @title = new_title
-    end
+    # if not @read_only
+    #   @title = new_title
+    # end
+    # Instead of that
 
-    unless @read_only
-      @title = new_title
-    end
+    # unless @read_only
+    #   @title = new_title
+    # end
+
+    @title = new_title unless @read_only
+
+
   end
 
   def words
