@@ -3,7 +3,7 @@ class ClassDocument
   attr_accessor :read_only
   attr_reader :title, :author, :content
 
-  def initialize(title, author, content, read_only)
+  def initialize(title, author, content, read_only, word)
     @title = title
     @author = author
     @content = content
@@ -31,4 +31,5 @@ class ClassDocument
     @author += " #{names.join(' ')} "
     puts @author
   end
+
 end
