@@ -14,7 +14,6 @@ class NewDocument
   end
 
   def title=(new_title)
-
     # if not @read_only
     #   @title = new_title
     # end
@@ -25,8 +24,6 @@ class NewDocument
     # end
 
     @title = new_title unless @read_only
-
-
   end
 
   def words
