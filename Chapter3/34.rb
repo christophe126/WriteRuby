@@ -1,6 +1,6 @@
 # Chapter 3. Instant Arrays and Hashes from Method Calls
 # Running Through Your Collection
-WORDS = %w{ Mary had a little lamb }
+WORDS = %w{Mary had a little lamb}
 my_word = %w{Mary}
 #---- don't do this ------------
 # for i in 0..words.size
@@ -36,12 +36,12 @@ def average_word_lenght
 end
 
 def average_word_lenght2
-  total = WORDS.inject(0) do | result, word |
-    word.size + result
+  total = WORDS.inject(0) do |result, word|
+    # word.size + result
     puts "result #{result}"
     puts "word #{word}"
   end
-  #total / WORDS.count
+  total / WORDS.count
 end
 
 puts average_word_lenght2

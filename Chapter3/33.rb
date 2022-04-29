@@ -14,6 +14,6 @@ def load_font(specification_hash)
   end
 end
 
-load_font({ name: 'times roman', size: 12})
-load_font( name: 'times roman', size: 12 )
+load_font({ name: 'times roman', size: 12 })
+load_font(name: 'times roman', size: 12)
 load_font name: 'times roman', size: 12
